@@ -14,10 +14,12 @@ const navHTML = `
 document.addEventListener("DOMContentLoaded", () => {
   document.body.insertAdjacentHTML("afterbegin", navHTML);
 
-  const page = location.pathname.split("/").pop() || "index.html";
+  const currentPage =
+    location.pathname.split("/").filter(Boolean).pop() || "index.html";
 
   document.querySelectorAll(".nav-links a").forEach(a => {
-    if (a.getAttribute("href") === page) {
+    const href = a.getAttribute("href");
+    if (href === currentPage) {
       a.classList.add("active");
     }
   });

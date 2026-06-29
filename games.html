@@ -14,22 +14,40 @@
 
   <div class="game-grid">
 
-    <div class="game-card">
-      <div class="game-media">Screenshot</div>
+    <a class="game-card video-card" href="games/ant-up.html">
+
+      <div class="game-media video-wrapper">
+
+        <video
+          class="hover-video"
+          muted
+          loop
+          preload="metadata"
+          src="media/ant-up-preview.mp4">
+        </video>
+
+        <div class="media-fallback">Ant Up! Preview</div>
+
+      </div>
+
       <div>
         <h2>Ant Up!</h2>
         <p>Chaotic multiplayer heist game where ants steal food from humans in real time.</p>
         <span class="status">In Development</span>
       </div>
-    </div>
+
+    </a>
 
   </div>
+
 </section>
 
 <footer>© 2026 Halfrabbit</footer>
 
 <script src="js/main.js"></script>
 <script src="js/nav.js"></script>
+<script src="js/video-hover.js"></script>
+<script src="js/reveal.js"></script>
 
 </body>
 </html>
