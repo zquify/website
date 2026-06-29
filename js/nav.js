@@ -14,12 +14,11 @@ const navHTML = `
 document.addEventListener("DOMContentLoaded", () => {
   document.body.insertAdjacentHTML("afterbegin", navHTML);
 
-  let page = window.location.pathname.split("/").pop();
-  if (!page || page === "") page = "index.html";
+  const page = location.pathname.split("/").pop() || "index.html";
 
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    if (link.getAttribute("href") === page) {
-      link.classList.add("active");
+  document.querySelectorAll(".nav-links a").forEach(a => {
+    if (a.getAttribute("href") === page) {
+      a.classList.add("active");
     }
   });
 });
