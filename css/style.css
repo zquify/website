@@ -1,0 +1,7 @@
+body{margin:0;font-family:'Segoe UI',sans-serif;background:#121315;color:#eee}
+nav{display:flex;justify-content:space-between;padding:24px 8%;background:#121315;position:sticky;top:0}
+a{color:#ddd;text-decoration:none;margin-left:24px}a:hover{color:#fff}
+.hero{padding:10vh 8%}.tag{color:#7fd36b;text-transform:uppercase;letter-spacing:.2em}
+h1{font-size:4rem;margin:.2em 0}.btn{display:inline-block;padding:12px 20px;background:#7fd36b;color:#111;border-radius:8px;font-weight:bold}
+section{padding:4rem 8%}.card{background:#1d2024;border-radius:16px;padding:24px;display:flex;gap:24px}.ph{width:320px;height:180px;background:#333;display:flex;align-items:center;justify-content:center;color:#999}
+footer{text-align:center;padding:2rem;color:#888}
