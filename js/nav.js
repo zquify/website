@@ -1,6 +1,7 @@
 const navHTML = `
 <nav>
   <a href="index.html" class="logo">HALFRABBIT</a>
+
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="games.html">Games</a>
@@ -14,12 +15,10 @@ const navHTML = `
 document.addEventListener("DOMContentLoaded", () => {
   document.body.insertAdjacentHTML("afterbegin", navHTML);
 
-  const currentPage =
-    location.pathname.split("/").filter(Boolean).pop() || "index.html";
+  const file = location.pathname.split("/").pop() || "index.html";
 
   document.querySelectorAll(".nav-links a").forEach(a => {
-    const href = a.getAttribute("href");
-    if (href === currentPage) {
+    if (a.getAttribute("href") === file) {
       a.classList.add("active");
     }
   });
